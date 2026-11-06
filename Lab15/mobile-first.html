@@ -1,0 +1,48 @@
+<!-- Name: Aarti Yadav, Roll No: 2410303005, Assignment: 15 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile First</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        /* Base styles for phones - cards stack */
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .card {
+            background-color: lightyellow;
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 16px;
+        }
+        /* 600px and up - cards side by side */
+        @media (min-width: 600px) {
+            .cards {
+                flex-direction: row;
+            }
+            .card {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobile First Cards</h1>
+    <div class="cards">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>This is the first card. On a phone the cards stack one below the other.</p>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>This is the second card. At 600px and up they sit two per row side by side.</p>
+        </div>
+    </div>
+</body>
+</html>
