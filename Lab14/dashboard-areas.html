@@ -2,15 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Grid Layout</title>
+    <title>Dashboard Areas</title>
     <style>
-        .container {
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .dashboard {
             display: grid;
+            grid-template-columns: 200px 1fr;
             grid-template-areas:
                 "header header"
                 "sidebar main"
                 "footer footer";
-            grid-template-columns: 200px 1fr;
             gap: 10px;
         }
         .header { grid-area: header; background-color: lightcoral; padding: 20px; }
@@ -20,11 +24,11 @@
     </style>
 </head>
 <body>
-    <h1>Grid Page Layout</h1>
-    <div class="container">
+    <h1>Dashboard</h1>
+    <div class="dashboard">
         <div class="header">Header</div>
         <div class="sidebar">Sidebar</div>
-        <div class="main">Main Content</div>
+        <div class="main">Main Area</div>
         <div class="footer">Footer</div>
     </div>
 </body>
